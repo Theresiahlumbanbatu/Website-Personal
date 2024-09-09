@@ -5,45 +5,122 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perpustakaan Angelica Mutiara</title>
     <style>
-        /* Internal CSS */
-        h2.internal-style {
-            color: blue;
-            font-size: 24px;
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
         }
-        p.internal-style {
-            color: green;
+
+        /* Header */
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #00509E;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
             font-size: 18px;
+        }
+
+        nav a:hover {
+            background-color: #003366;
+        }
+
+        /* Main Content */
+        main {
+            padding: 20px;
+            background-color: white;
+        }
+
+        main h2 {
+            color: #00509E;
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .content-section {
+            display: flex;
+            gap: 20px;
+        }
+
+        .content-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+
+        .content-section div {
+            flex: 1;
+        }
+
+        .content-section p {
+            font-size: 16px;
+            line-height: 1.6;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
         }
     </style>
 </head>
 <body>
 
-    <!-- Profil Perpustakaan -->
-    <h1>Perpustakaan Angelica Mutiara</h1>
-    <h2>D-III Perpustakaan Universitas Sumatera Utara</h2>
-    <p>Perkenalkan, nama saya Angelica Mutiara, saya adalah mahasiswa ilmu perpustakaan. Ini Homepage pertama saya, karena saya baru belajar tentang cara membuat homepage.</p>
-    
-    <h3>Perpustakaan Kota Medan</h3>
-    <h4>Berikut ini adalah gambar Perpustakaan Kota Medan:</h4>
-    <img src="perpustakaan_kota_medan.jpg" alt="Gambar Perpustakaan Kota Medan" width="300px">
+    <!-- Header -->
+    <header>
+        <h1>Perpustakaan Angelica Mutiara</h1>
+        <p>D-III Perpustakaan Universitas Sumatera Utara</p>
+    </header>
 
-    <h4>Logo Perpustakaan Nasional RI</h4>
-    <img src="logo_perpusnas.jpg" alt="Logo Perpustakaan Nasional RI" width="150px">
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="#home">Beranda</a>
+        <a href="#koleksi">Koleksi</a>
+        <a href="#layanan">Layanan</a>
+        <a href="#tentang">Tentang Kami</a>
+        <a href="#kontak">Kontak</a>
+    </nav>
 
-    <!-- Deskripsi Perpustakaan Kota Medan -->
-    <p>Perpustakaan Kota Medan adalah salah satu pusat sumber informasi dan literasi di kota ini. Terletak di lokasi strategis, perpustakaan ini menyediakan berbagai koleksi buku, majalah, dan materi referensi lainnya yang mencakup berbagai topik. Selain itu, fasilitas komputer dan akses internet juga tersedia untuk masyarakat yang ingin mencari informasi secara online.</p>
-    <p>Perpustakaan ini sering menjadi tempat pelaksanaan berbagai acara seperti seminar, lokakarya, dan kegiatan edukatif lainnya. Dengan beragam layanannya, perpustakaan Kota Medan berperan penting dalam mempromosikan literasi dan pendidikan di komunitasnya.</p>
+    <!-- Main Content -->
+    <main>
+        <h2>Selamat Datang di Perpustakaan Angelica Mutiara</h2>
+        <div class="content-section">
+            <img src="perpustakaan.jpg" alt="Gambar Perpustakaan">
+            <div>
+                <p>Perpustakaan kami menyediakan berbagai koleksi buku, majalah, jurnal, dan materi referensi lainnya untuk memenuhi kebutuhan informasi Anda. Selain itu, kami juga menawarkan berbagai layanan seperti peminjaman buku, akses komputer, dan ruang baca yang nyaman.</p>
+                <p>Kami berkomitmen untuk mendukung pendidikan dan literasi di komunitas kami dengan menyediakan akses ke sumber daya informasi yang berkualitas dan layanan yang ramah.</p>
+            </div>
+        </div>
+    </main>
 
-    <!-- Video Perpustakaan Nasional -->
-    <h4>Video Perpustakaan Nasional</h4>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" title="Video dari Youtube" allowfullscreen></iframe>
-
-    <!-- JavaScript -->
-    <script>
-        function displayDateTime() {
-            document.getElementById("dateTime").innerHTML = new Date();
-        }
-    </script>
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Perpustakaan Angelica Mutiara | Universitas Sumatera Utara</p>
+    </footer>
 
 </body>
 </html>
