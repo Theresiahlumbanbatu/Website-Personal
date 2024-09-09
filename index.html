@@ -1,68 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-    <title>Contoh Inline CSS</title>
-<body>
-    <h1 style="color: gold; font-family: Times New Roman;">Ini adalah judul dengan inline style</h1>
-    <p style="color: green; font-size: 17px;">Ini adalah paragraph dengan inline styles.</p>
-</body>
-
-</html>
-
-<html lang="en">
+<html>
 <head>
-    <title>Contoh Internal CSS</title>
+    <title>My First JavaScript</title>
     <style>
-        h1 {
-            color: gold;
-            font-family: Times New Roman,
+        /* Internal CSS */
+        h2.internal-style {
+            color: blue;
+            font-size: 24px;
         }
-
-        p {
+        p.internal-style {
             color: green;
-            font-size: 16px;
+            font-size: 18px;
         }
-
     </style>
 </head>
 <body>
-    <h1>Ini adalah judul dengan internal style</h1>
-    <p>Ini adalah paragraph dengan internal style.</p>
-</body>
-</html>
 
-<html lang="en">
-<head>
-    
-    <title>Contoh Eksternal CSS</title>
-    <link rel="stylesheet" href="styles.css">
-	<style>
-		h1 {
-			color: gold;
-			font-family: Times New Roman,
-		}
+    <!-- Button to show date and time -->
+    <button onclick="displayDateTime()">Click me to display Date and Time.</button>
+    <p id="dateTime"></p>
 
-		p {
-			color: green;
-			font-size: 16px;
-		}
-	
-    </style>
-</head>
-<body>
-    <h1>Ini adalah judul dengan eksternal style</h1>
-    <p>Ini adalah paragraph dengan external style.</p>
-</body>
-</html>
+    <h1 style="color:red; font-size: 28px;">Ini adalah judul dengan inline style</h1>
+    <p style="color:purple; font-size: 16px;">Ini adalah paragraph dengan inline styles.</p>
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Pengertian HTML dan CSS</title>
-</head>
-<body>
-	<h1> Pengertian HTML dan CSS </h1>
-    <p>HTML adalah bahasa markup standar yang digunakan untuk membuat struktur dan konten halaman web. Dalam HTML, pengembang web mendefinisikan elemen-elemen seperti teks, gambar, tautan, formulir, dan elemen lainnya yang membentuk tampilan halaman web. HTML menggunakan tag-tag untuk menandai elemen-elemen ini sehingga peramban web tahu cara menampilkan mereka.</p>
+    <h2 class="internal-style">Ini adalah judul dengan internal style</h2>
+    <p class="internal-style">Ini adalah paragraph dengan internal style.</p>
 
-    <p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen-elemen HTML. Penggunaan CSS memungkinkan pemisahan antara struktur dan tata letak, sehingga HTML dapat fokus pada struktur konten, sementara CSS mengontrol cara konten tersebut ditampilkan.</p>
+    <!-- JavaScript to display date and time -->
+    <script>
+        function displayDateTime() {
+            document.getElementById("dateTime").innerHTML = new Date();
+        }
+    </script>
+
 </body>
 </html>
