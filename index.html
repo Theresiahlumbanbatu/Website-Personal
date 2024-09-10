@@ -80,47 +80,100 @@ background-size: cover;
 <source src="AUDIO-2023-07-28-11-13-53.m4a" alt="audio/mpeg">
 </audio>
 
-<p style="font-size: 20px" style="margin-bottom: 20px"><font color="white"><b>Formulir Anggota Perpustakaan</b></font></p>
-<p style="margin-bottom: 50px"><table cellpadding="10">
-    <tr align="center">
-    </tr>
-    <tr align="center">
-        <td>Nama: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr align="center">
-        <td>NIM:</td>
-        <td><input type="password"/></td>
-    </tr>
-    <tr align="center">
-        <td>Alamat:</td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr align="center">
-        <td>Jenis Kelamin:</td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr align="center">
-        <td>Email: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr align="center">
-        <td>No HP: </td>
-        <td><input type="number"/></td>
-    </tr>
-    <tr align="center">
-        <td>Tempat Lahir: </td>
-        <td><input type="text"/></td>
-    </tr>
-    <tr align="center">
-        <td>Tanggal Lahir: </td>
-        <td><input type="number"/></td>
-    </tr>
-    <tr align="center">
-        <td colspan="3" align="center">
-        <button>REGISTER</button></td>
-    </tr>
-</table></p>
+<p><fieldset>
+        <legend>Formulir Pemesanan Buku</legend>
+        <p>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+        <p>
+            <label>Nomor Telepon:</label>
+            <input type="number" name="Nomor Telepon" placeholder="+62..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+         <p>Detail Pemesanan</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Tanggal Pemesanan</label>
+            <input type="date" name="Tanggal Pemesanan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Formulir Perpanjangan Peminjaman Buku</legend>
+        <p>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+         <p>Detail Peminjaman Awal</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Tanggal Peminjaman Buku</label>
+            <input type="date" name="Tanggal Peminjaman Buku"/>
+        </p>
+         <p>Detail Perpanjang Peminjaman Buku</p>
+        <p>
+            <label>Tanggal Perpanjang Peminjaman Buku</label>
+            <input type="date" name="Tanggal Perpanjang Peminjaman Buku"/>
+        </p>
+            <label>Alasan Perpanjangan</label>
+            <input type="text" name="Alasan Perpanjangan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Kirim" />
+        </p>
+        </fieldset>
+    </form>
 </p>
 <footer><center><i>Theresiah Blezinky  - 222201026</center></footer></i>
 </font>
