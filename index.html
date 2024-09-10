@@ -9,28 +9,56 @@ background-image: url("https://tse3.mm.bing.net/th?id=OIP.oqoKdXhPmoBTK-xDhd9Nnw
 background-repeat: no-repeat;
 background-size: cover;
 }
-   table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px auto;
-            background-color: #fff;
-        } 
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
     }
-        th, td {
-            border: 1px solid #ddd;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f2f2f2;
-        }
-        tr:nth-child(even) {
-            background-color: #f9f9f9;
-        }
-        caption {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-        }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
 </style>
   
 <font color="black">
@@ -52,25 +80,63 @@ background-size: cover;
 <source src="AUDIO-2023-07-28-11-13-53.m4a" alt="audio/mpeg">
 </audio>
 
-    <table>
-        <caption>Contoh Tabel HTML</caption>
-        <tr>
-            <th>Kolom 1</th>
-            <th>Kolom 2</th>
-        </tr>
-        <tr>
-            <td>Baris 1 Kolom 1</td>
-            <td>Baris 1 Kolom 2</td>
-        </tr>
-        <tr>
-            <td>Baris 2 Kolom 1</td>
-            <td>Baris 2 Kolom 2</td>
-        </tr>
-        <tr>
-            <td>Baris 3 Kolom 1</td>
-            <td>Baris 3 Kolom 2</td>
-        </tr>
-    </table>
+ <p style="font-size: 20px" style="margin-bottom: 20px"><font color="white"><b>Tabel Bahan Buku</b></font>
+        <table border="1">
+            <tr bgcolor="#EFE7DA" align="center">
+                <th>No.</th>
+                <th>Judul Buku</th>
+                <th>Pengarang</th>
+                <th>Penerbit</th>
+                <th>Tahun Terbit</th>
+                <th>Jumlah Halaman</th>
+                <th>ISBN</th>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>1</td>
+                <td>"The Great Gatsby"</td>
+                <td>F. Scott Fitzgerald</td>
+                <td>Scribner</td>
+                <td>1925</td>
+                <td>180</td>
+                <td>978-0743273565</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>2</td>
+                <td>"To Kill a Mockingbird"</td>
+                <td>Harper Lee</td>
+                <td>J. B. Lippincott</td>
+                <td>1960</td>
+                <td>281</td>
+                <td>978-0061120084</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>3</td>
+                <td>"1984"</td>
+                <td>George Orwell</td>
+                <td>Secker and Warburg</td>
+                <td>1949</td>
+                <td>328</td>
+                <td>978-0451524935</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>4</td>
+                <td>"Pride and Prejudice"</td>
+                <td>Jane Austen</td>
+                <td>Thomas Egerton</td>
+                <td>1813</td>
+                <td>279</td>
+                <td>978-0141439518</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>5</td>
+                <td>"The Catcher in he Rye"</td>
+                <td>J.D. Salinger</td>
+                <td>Little, Brown</td>
+                <td>1951</td>
+                <td>277</td>
+                <td>978-0316769488</td>
+            </tr>
+        </table></p>
 </p>
 <footer><center><i>Theresiah Blezinky  - 222201026</center></footer></i>
 </font>
