@@ -5,13 +5,83 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge=>
   <meta name="viewport" content="widht=device-width, initial-scale=1.0">
   <title>Perpustakaan Theresiah Blezinky</title>
-  <link rel="stylesheet" href="style.css">
+  <link href="stylesheet" rel="style.css">
 
 <style>
+nav {
+        background-color: #f2f2f2;
+        overflow: hidden;
+    }
+
+    nav a {
+        float: left;
+        color: black;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+    }
+
+    nav a:hover {
+        background-color: #ddd;
+    }
+
+    nav .dropdown {
+        float: left;
+        overflow: hidden;
+    }
+
+    nav .dropdown .dropbtn {
+        font-size: 17px;
+        border: none;
+        outline: none;
+        color: black;
+        padding: 14px 16px;
+        background-color: inherit;
+        font-family: inherit;
+        margin: 0;
+    }
+
+    nav .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+    }
+
+    nav .dropdown-content a {
+        float: none;
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+    nav .dropdown:hover .dropdown-content {
+        display: block;
+    }
+</style>
 </head>
 <body>
+
+<nav>
+<a href="index.html">Home</a>
+<div class="dropdown">
+    <button class="dropbtn">Dropdown</button>
+    <div class="dropdown-content">
+        <a href="kolom1modul4.html">Kolom 1</a>
+        <a href="kolom2modul4.html">Kolom 2</a>
+        <a href="kolom3modul4.html">Kolom 3</a>
+    </div>
+</div>
+</nav>
+</body>
+	
 <style>
-body {
+  body {
 background-image: url("https://tse2.mm.bing.net/th?id=OIP.0zv4Av5_ZjYnBB0pvpLN1gHaEK&pid=Api&P=0&h=180");
 background-repeat: no-repeat;
 background-size: cover;
