@@ -1,1 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css"rel="stylesheet">
+    <link href="bootstrap/css,bootstrap--theme.min.css"rel="styelesheet">
+    <script src="bootstrap/js/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<style>
+  }
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+      background-color: #333;
+    }
+    
+    li {
+      float: left;
+    }
+    
+    li a, .dropbtn {
+      display: inline-block;
+      color: white;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+    }
+    
+    li a:hover, .dropdown:hover .dropbtn {
+      background-color: red;
+    }
+    
+    li.dropdown {
+      display: inline-block;
+    }
+    
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+    
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+      text-align: left;
+    }
+    
+    .dropdown-content a:hover {background-color: #f1f1f1;}
+    
+    .dropdown:hover .dropdown-content {
+      display: block;
+    }
+</style>
+<body>
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="">UI</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="formulir perpanjangan peminjaman buku">LAYANAN</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="formulir pemesanan buku">Formulir pemesanan buku</a></li>
+            <li><a class="dropdown-item" href="formulir anggota">formulir anggota</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="Tabel Bahan Buku">Tabel Bahan Buku</a></li>
+	    <li><a class="dropdown-item" href="Pengertian HTML dan CSS">Pengertian HTML dan CSS</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<font color="black">
+<h1><center><u>Perpustakaan Theresiah Blezinky</center></h1></u>
+<h-2>Welcome To Perpustakaan Theresiah Blezinky</h2>
+<p>Perkenalkan, nama saya Theresiah Blezinky dengan nim 222201026 Fakultas Vokasi Universitas Sumatera Utara 
+<i>ini adalah homepage</i>
+<b>pertama</b> saya, karena saya baru belajar tentang cara membuat <b><i><a href=https://lib.ui.ac.id//> website perpustakaan Universitas Indonesia</a></i></b>.
+<h-3>Berikut ini adalah gambar dari gedung Perpustakaan Universitas Indonesia.</h3>
+</p>
+<h-4><center><img src="https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/827/desain-perpustakaan-keren-cover.jpg" alt=/><center></h4>
+<p style="margin-bottom: 50px">
+<h-5><i>Perpustakaan Universitas Indonesia</i></h5>
+</p>
+<p><h-6></h6></p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bHyHFFB78p8?si=ErFyH05P8MYGMJ1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+  <p style="margin-bottom: 50px"> 
+<audio controls>
+<source src="Mars Perpustakaan.mp3" alt="audio/mpeg">
+</audio>
+
+<p style="font-size: 20px" style="margin-bottom: 20px"><font color="blue"><b>Formulir Anggota Perpustakaan</b></font></p>
+<p style="margin-bottom: 50px"><table cellpadding="10">
+    <tr align="center">
+    </tr>
+    <tr align="center">
+        <td>Nama: </td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr align="center">
+        <td>NIM:</td>
+        <td><input type="password"/></td>
+    </tr>
+    <tr align="center">
+        <td>Alamat:</td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr align="center">
+        <td>Jenis Kelamin:</td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr align="center">
+        <td>Email: </td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr align="center">
+        <td>No HP: </td>
+        <td><input type="number"/></td>
+    </tr>
+    <tr align="center">
+        <td>Tempat Lahir: </td>
+        <td><input type="text"/></td>
+    </tr>
+    <tr align="center">
+        <td>Tanggal Lahir: </td>
+        <td><input type="number"/></td>
+    </tr>
+    <tr align="center">
+        <td colspan="3" align="center">
+        <button>REGISTER</button></td>
+    </tr>
+</table></p>
+
+<p style="font-size: 20px" style="margin-bottom: 20px"><font color="blue"><b>Tabel Bahan Buku</b></font>
+        <table border="1">
+            <tr bgcolor="#EFE7DA" align="center">
+                <th>No.</th>
+                <th>Judul Buku</th>
+                <th>Pengarang</th>
+                <th>Penerbit</th>
+                <th>Tahun Terbit</th>
+                <th>Jumlah Halaman</th>
+                <th>ISBN</th>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>1</td>
+                <td>"Man's Search for Meaning"</td>
+                <td>Viktor E. Frankl</td>
+                <td>Beacon Press</td>
+                <td>2006</td>
+                <td>165 halaman</td>
+                <td>9780-8070-1429-5</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>2</td>
+                <td>"Laut Bercinta"</td>
+                <td>Leila S. Chudori</td>
+                <td>KPG</td>
+                <td>2016</td>
+                <td>306halaman</td>
+                <td>978-602-420-530-4</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>3</td>
+                <td>"Kimia Dasar"</td>
+                <td>R. Paul Curto</td>
+                <td>Erlangga</td>
+                <td>2018</td>
+                <td>392 Halaman</td>
+                <td>978-602-430-243-2</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>4</td>
+                <td>"Fisika Dasar"</td>
+                <td>Halliday,Resnik dan Walker</td>
+                <td>Erlangga</td>
+                <td>2016</td>
+                <td>1100 Halaman</td>
+                <td>978-602-432-071-0</td>
+            </tr>
+            <tr bgcolor="#EFE7DA" align="center">
+                <td>5</td>
+                <td>"Bumi Manusia"</td>
+                <td>Pramoedya Ananta Toer</td>
+                <td>Lentera Hati</td>
+                <td>2012</td>
+                <td>408 Halaman</td>
+                <td>978-602-9140-01-3</td>
+            </tr>
+        </table></p>
+    
+<p><fieldset>
+        <legend>Formulir Pemesanan Buku</legend>
+        <p>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+        <p>
+            <label>Nomor Telepon:</label>
+            <input type="number" name="Nomor Telepon" placeholder="+62..." />
+        </p>
+        <p>
+            <label>Jenis kelamin:</label>
+            <label><input type="radio" name="jenis_kelamin" value="laki-laki" /> Laki-laki</label>
+            <label><input type="radio" name="jenis_kelamin" value="perempuan" /> Perempuan</label>
+        </p>
+         <p>Detail Pemesanan</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Tanggal Pemesanan</label>
+            <input type="date" name="Tanggal Pemesanan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Daftar" />
+        </p>
+        </fieldset>
+    </form>
+    <form action="contact.php" method="POST">
+        <fieldset>
+        <legend>Formulir Perpanjangan Peminjaman Buku</legend>
+        <p>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+         <p>Detail Peminjaman Awal</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Tanggal Peminjaman Buku</label>
+            <input type="date" name="Tanggal Peminjaman Buku"/>
+        </p>
+         <p>Detail Perpanjang Peminjaman Buku</p>
+        <p>
+            <label>Tanggal Perpanjang Peminjaman Buku</label>
+            <input type="date" name="Tanggal Perpanjang Peminjaman Buku"/>
+        </p>
+            <label>Alasan Perpanjangan</label>
+            <input type="text" name="Alasan Perpanjangan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Kirim" />
+        </p>
+        </fieldset>
+    </form>
+</p>
+</body>
+	<h1> Pengertian HTML dan CSS </h1>
+    <p>HTML adalah sebuah bahasa standar yang digunakan untuk mempublikasikan document secara online sehingga bisa ditampilkan atau diakses ,menampilkan berbagai informasi didalam sebuah penjelajah web internet dan pemformatan hiperteks sederhana yang ditulis dalam berkas formatASCII agar dapat menghasilakn taampilan wujud yang terintegrasi.</p>
+    <p>CSS adalah bahasa stylesheet yang digunakan untuk mengontrol tata letak dan tampilan halaman web. Dengan CSS, Anda dapat mengatur warna, ukuran, spasi, jenis font, dan banyak properti tata letak lainnya untuk elemen-elemen HTML. Penggunaan CSS memungkinkan pemisahan antara struktur dan tata letak, sehingga HTML dapat fokus pada struktur konten, sementara CSS mengontrol cara konten tersebut ditampilkan.</p>
+</body>
+</html>
+<footer><center><i>Theresiah Blezinky  - 222201026</center></footer></i>
+</font>
+</body>
+<html>
