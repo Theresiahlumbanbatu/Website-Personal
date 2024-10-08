@@ -1,1 +1,59 @@
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="bootstrap/css/bootstrap.min.css"rel="stylesheet">
+    <link href="bootstrap/css,bootstrap--theme.min.css"rel="styelesheet">
+    <script src="bootstrap/js/jquery-1.11.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+</body>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<legend>Formulir Perpanjangan Peminjaman Buku</legend>
+        <p>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+         <p>Detail Peminjaman Awal</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Tanggal Peminjaman Buku</label>
+            <input type="date" name="Tanggal Peminjaman Buku"/>
+        </p>
+         <p>Detail Perpanjang Peminjaman Buku</p>
+        <p>
+            <label>Tanggal Perpanjang Peminjaman Buku</label>
+            <input type="date" name="Tanggal Perpanjang Peminjaman Buku"/>
+        </p>
+            <label>Alasan Perpanjangan</label>
+            <input type="text" name="Alasan Perpanjangan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Kirim" />
+        </p>
+        </fieldset>
+    </form>
+</p>
+</body>
+<html>
