@@ -3,116 +3,145 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+        
+        li {
+            float: left;
+        }
+        
+        li a, .dropbtn {
+            display: inline-block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+        
+        li a:hover, .dropdown:hover .dropbtn {
+            background-color: red;
+        }
+
+        .carousel-item img {
+            max-height: 300px; /* Adjust height as needed */
+            object-fit: cover; /* Ensure images fit nicely */
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+    </style>
 </head>
-<style>
-  }
-    ul {
-      list-style-type: none;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-      background-color: #333;
-    }
-    
-    li {
-      float: left;
-    }
-    
-    li a, .dropbtn {
-      display: inline-block;
-      color: white;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-    }
-    
-    li a:hover, .dropdown:hover .dropbtn {
-      background-color: red;
-    }
-    
-    li.dropdown {
-      display: inline-block;
-    }
-    
-    .dropdown-content {
-      display: none;
-      position: absolute;
-      background-color: #f9f9f9;
-      min-width: 160px;
-      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-      z-index: 1;
-    }
-    
-    .dropdown-content a {
-      color: black;
-      padding: 12px 16px;
-      text-decoration: none;
-      display: block;
-      text-align: left;
-    }
-    
-    .dropdown-content a:hover {background-color: #f1f1f1;}
-    
-    .dropdown:hover .dropdown-content {
-      display: block;
-    }
-</style>
 <body>
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="">UI</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            LAYANAN
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="FormulirPemesananBuku.html">formulir pemesanan buku</a></li>
-            <li><a class="dropdown-item" href="Formulir anggota.html">formulir anggota</a></li>
-            <li><a class="dropdown-item" href="Tabel bahan buku.html">Tabel Bahan Buku</a></li>
-	    <li><a class="dropdown-item" href="Pengertian HTML dan CSS">Pengertian HTML dan CSS</a></li>
-          </ul>
-        </li>
-      </ul>
-</nav>
-      <form class="d-flex">
-        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="">UI</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        LAYANAN
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="FormulirPemesananBuku.html">Formulir Pemesanan Buku</a></li>
+                        <li><a class="dropdown-item" href="FormulirAnggota.html">Formulir Anggota</a></li>
+                        <li><a class="dropdown-item" href="TabelBahanBuku.html">Tabel Bahan Buku</a></li>
+                        <li><a class="dropdown-item" href="PengertianHTMLdanCSS.html">Pengertian HTML dan CSS</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+        </div>
     </div>
-  </div>
 </nav>
 
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<font color="black">
-<h1><center><u>Perpustakaan Theresiah Blezinky</center></h1></u>
-<h-2>Welcome To Perpustakaan Theresiah Blezinky</h2>
-<p>Perkenalkan, nama saya Theresiah Blezinky dengan nim 222201026 Fakultas Vokasi Universitas Sumatera Utara 
-<i>ini adalah homepage</i>
-<b>pertama</b> saya, karena saya baru belajar tentang cara membuat <b><i><a href=https://lib.ui.ac.id//> website perpustakaan Universitas Indonesia</a></i></b>.
-<h-3>Berikut ini adalah gambar dari gedung Perpustakaan Universitas Indonesia.</h3>
-</p>
-<h-4><center><img src="https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/827/desain-perpustakaan-keren-cover.jpg" alt=/><center></h4>
-<p style="margin-bottom: 50px">
-<h-5><i>Perpustakaan Universitas Indonesia</i></h5>
-</p>
-<p><h-6></h6></p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/bHyHFFB78p8?si=ErFyH05P8MYGMJ1y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-  <p style="margin-bottom: 50px"> 
-<audio controls>
-<source src="Mars Perpustakaan.mp3" alt="audio/mpeg">
-</audio>
+<main class="container mt-4">
+    <h1><u>Perpustakaan Theresiah Blezinky</u></h1>
+    <h2>Welcome To Perpustakaan Theresiah Blezinky</h2>
+    <p>Perkenalkan, nama saya Theresiah Blezinky dengan NIM 222201026 Fakultas Vokasi Universitas Sumatera Utara. 
+    <i>Ini adalah homepage</i> <b>pertama</b> saya, karena saya baru belajar tentang cara membuat <b><i><a href="https://lib.ui.ac.id/">website perpustakaan Universitas Indonesia</a></i></b>.</p>
+    <h3>Berikut ini adalah gambar dari gedung Perpustakaan Universitas Indonesia.</h3>
 
+    <h4><img src="https://arsitagx-master-article.s3.ap-southeast-1.amazonaws.com/article-photo/827/desain-perpustakaan-keren-cover.jpg" alt="Perpustakaan Universitas Indonesia" class="img-fluid"/></h4>
+    <h5><i>Perpustakaan Universitas Indonesia</i></h5>
+
+    <h3>Video tentang Perpustakaan</h3>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/bHyHFFB78p8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <h3>Audio</h3>
+    <audio controls>
+        <source src="MarsPerpustakaan.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2 class="mt-5">Pameran Buku</h2>
+
+    <!-- Carousel for Book Covers -->
+    <div id="bookCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="link-to-book-cover-1.jpg" class="d-block w-100" alt="Book Cover 1">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Man's Search for Meaning"</h5>
+                    <p>By Viktor E. Frankl</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="link-to-book-cover-2.jpg" class="d-block w-100" alt="Book Cover 2">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Laut Bercinta"</h5>
+                    <p>By Leila S. Chudori</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="link-to-book-cover-3.jpg" class="d-block w-100" alt="Book Cover 3">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Kimia Dasar"</h5>
+                    <p>By R. Paul Curto</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="link-to-book-cover-4.jpg" class="d-block w-100" alt="Book Cover 4">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Fisika Dasar"</h5>
+                    <p>By Halliday, Resnik dan Walker</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="link-to-book-cover-5.jpg" class="d-block w-100" alt="Book Cover 5">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>"Bumi Manusia"</h5>
+                    <p>By Pramoedya Ananta Toer</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#bookCarousel" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#bookCarousel" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+</main>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
-
