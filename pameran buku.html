@@ -77,7 +77,44 @@
         box-shadow: 0 0 10px rgba(52, 152, 219, 0.1);
         outline: none;
     }
+/* Styling untuk datepicker */
+    .ui-datepicker {
+        background: white;
+        padding: 15px;
+        border-radius: 10px;
+        box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+        border: none;
+    }
 
+    .ui-datepicker-header {
+        background: linear-gradient(to right, #3498db, #2ecc71);
+        color: white;
+        border-radius: 8px;
+        padding: 10px;
+    }
+
+    .ui-datepicker-calendar th {
+        color: #2c3e50;
+        padding: 7px;
+    }
+
+    .ui-datepicker-calendar td {
+        padding: 5px;
+    }
+
+    .ui-datepicker-calendar .ui-state-default {
+        text-align: center;
+        border-radius: 5px;
+        padding: 5px;
+        text-decoration: none;
+        color: #2c3e50;
+    }
+
+    .ui-datepicker-calendar .ui-state-active,
+    .ui-datepicker-calendar .ui-state-hover {
+        background: #3498db;
+        color: white;
+    }
     /* Styling untuk tombol */
     #searchBtn {
         width: 100%;
@@ -211,7 +248,23 @@
         </div>
     </div>
 </nav>
+ <div class="u-clearfix u-sheet u-valign-middle u-sheet-1">
+        <div class="custom-column">
+          <h1>Pencarian Buku</h1>
+          <div class="form-group">
+            <input type="text" id="bookSearch" class="form-control" placeholder="Masukkan judul buku">
+          </div>
+          <button id="searchBtn" class="btn btn-primary">Cari</button>
+          <div id="searchResults" class="mt-4"></div>
+        </div>
+  
+  <footer class="u-align-center u-clearfix u-container-align-center u-footer u-grey-80 u-footer" id="sec-0dd5">
 
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+  <script src="custom.js"></script>
+  <script>
     <div class="slider-container">
         <div class="slider" id="bookSlider">
             <div class="book">
@@ -261,6 +314,7 @@
 </main>
 
 <script>
+        
     let slider = document.getElementById('bookSlider');
     let scrollAmount = 0;
     let bookWidth = slider.querySelector('.book').offsetWidth;
