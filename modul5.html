@@ -276,8 +276,124 @@
         </div>
     </div>
 </nav>
-<main class="container mt-4">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perpustakaan SUKA BACA</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #f4f4f4;
+        }
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            background-color: #007BFF;
+            color: white;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+
+        /* Container */
+        .container {
+            padding: 20px;
+        }
+
+        /* Output Section */
+        .output, #event-details {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #e9ecef;
+            border-radius: 5px;
+        }
+
+        /* Button Styles */
+        button {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <!-- Banner -->
+    <div class="banner">
+        <h1>Perpustakaan SUKA BACA</h1>
+        <p>Selamat datang di website perpustakaan kami! Temukan berbagai informasi dan acara menarik.</p>
+    </div>
+
+    <!-- Container -->
+    <div class="container">
+        <!-- Section 1: JavaScript Variabel, Operator, Kondisi, dan Perulangan -->
+        <h2>Simulasi Daftar Buku</h2>
+        <button onclick="showBookList()">Tampilkan Daftar Buku</button>
+        <div class="output" id="output"></div>
+
+        <!-- Section 2: Event DOM -->
+        <h2>Pameran Buku</h2>
+        <p>Klik tombol di bawah ini untuk melihat jadwal pameran buku.</p>
+        <button onclick="showEventDetails()">Lihat Jadwal</button>
+        <div id="event-details"></div>
+    </div>
+
+    <script>
+        // Variabel dan Operator
+        const books = [
+            { title: "Belajar HTML", author: "John Doe" },
+            { title: "Dasar CSS", author: "Jane Smith" },
+            { title: "Pemrograman JavaScript", author: "Alice Brown" }
+        ];
+
+        // Fungsi untuk menampilkan daftar buku
+        function showBookList() {
+            const output = document.getElementById("output");
+            let content = "<h3>Daftar Buku:</h3><ul>";
+
+            // Struktur Perulangan
+            for (let i = 0; i < books.length; i++) {
+                content += `<li>${books[i].title} oleh ${books[i].author}</li>`;
+            }
+
+            content += "</ul>";
+
+            // Struktur Kondisi
+            if (books.length > 0) {
+                content += `<p>Total buku tersedia: ${books.length}</p>`;
+            } else {
+                content += "<p>Tidak ada buku yang tersedia.</p>";
+            }
+
+            output.innerHTML = content;
+        }
+
+        // Event untuk menampilkan jadwal pameran buku
+        function showEventDetails() {
+            const eventDetails = document.getElementById("event-details");
+            const schedule = `
+                <ul>
+                    <li><b>Hari 1:</b> Diskusi Buku - 10:00 WIB</li>
+                    <li><b>Hari 2:</b> Penandatanganan Buku oleh Penulis - 14:00 WIB</li>
+                    <li><b>Hari 3:</b> Diskon Buku Spesial - 09:00 WIB</li>
+                </ul>
+            `;
+            eventDetails.innerHTML = `
+                <h3>Jadwal Pameran Buku:</h3>
+                ${schedule}
+            `;
+        }
+    </script>
     
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
