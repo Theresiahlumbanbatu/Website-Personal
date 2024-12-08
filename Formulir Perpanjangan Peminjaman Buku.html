@@ -275,63 +275,49 @@
         </div>
     </nav>
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<legend>Tabel bahan buku</legend>
+<legend>Formulir Perpanjangan Peminjaman Buku</legend>
         <p>
-<p style="font-size: 20px" style="margin-bottom: 20px"><font color="blue"><b>Tabel Bahan Buku</b></font>
-        <table border="1">
-            <tr bgcolor="#EFE7DA" align="center">
-                <th>No.</th>
-                <th>Judul Buku</th>
-                <th>Pengarang</th>
-                <th>Penerbit</th>
-                <th>Tahun Terbit</th>
-                <th>Jumlah Halaman</th>
-                <th>ISBN</th>
-            </tr>
-            <tr bgcolor="#EFE7DA" align="center">
-                <td>1</td>
-                <td>"Man's Search for Meaning"</td>
-                <td>Viktor E. Frankl</td>
-                <td>Beacon Press</td>
-                <td>2006</td>
-                <td>165 halaman</td>
-                <td>9780-8070-1429-5</td>
-            </tr>
-            <tr bgcolor="#EFE7DA" align="center">
-                <td>2</td>
-                <td>"Laut Bercinta"</td>
-                <td>Leila S. Chudori</td>
-                <td>KPG</td>
-                <td>2016</td>
-                <td>306halaman</td>
-                <td>978-602-420-530-4</td>
-            </tr>
-            <tr bgcolor="#EFE7DA" align="center">
-                <td>3</td>
-                <td>"Kimia Dasar"</td>
-                <td>R. Paul Curto</td>
-                <td>Erlangga</td>
-                <td>2018</td>
-                <td>392 Halaman</td>
-                <td>978-602-430-243-2</td>
-            </tr>
-            <tr bgcolor="#EFE7DA" align="center">
-                <td>4</td>
-                <td>"Fisika Dasar"</td>
-                <td>Halliday,Resnik dan Walker</td>
-                <td>Erlangga</td>
-                <td>2016</td>
-                <td>1100 Halaman</td>
-                <td>978-602-432-071-0</td>
-            </tr>
-            <tr bgcolor="#EFE7DA" align="center">
-                <td>5</td>
-                <td>"Bumi Manusia"</td>
-                <td>Pramoedya Ananta Toer</td>
-                <td>Lentera Hati</td>
-                <td>2012</td>
-                <td>408 Halaman</td>
-                <td>978-602-9140-01-3</td>
-            </tr>
-        </table></p>
-</html>
+            <label>Nama Lengkap:</label>
+            <input type="text" name="nama" placeholder="Nama lengkap" />
+        </p>
+        <p>
+            <label>Nomor Anggota Perpustakaan:</label>
+            <input type="number" name="Nomor anggota perpustakaan"/>
+        </p>
+        <p>
+            <label>Email:</label>
+            <input type="email" name="email" placeholder="@gmail.com" />
+        </p>
+         <p>Detail Peminjaman Awal</p>
+         <p>
+            <label>Judul Buku yang Dipesan</label>
+            <input type="text" name="Judul Buku"/>
+        </p>
+         <p>
+            <label>Penulis Buku</label>
+            <input type="text" name="Penulis Buku"/>
+        </p>
+         <p>
+            <label>Nomor ISBN</label>
+            <input type="number" name="Nomor ISBN"/>
+        </p>
+         <p>
+            <label>Tanggal Peminjaman Buku</label>
+            <input type="date" name="Tanggal Peminjaman Buku"/>
+        </p>
+         <p>Detail Perpanjang Peminjaman Buku</p>
+        <p>
+            <label>Tanggal Perpanjang Peminjaman Buku</label>
+            <input type="date" name="Tanggal Perpanjang Peminjaman Buku"/>
+        </p>
+            <label>Alasan Perpanjangan</label>
+            <input type="text" name="Alasan Perpanjangan"/>
+        </p>
+        <p>
+            <input type="submit" name="submit" value="Kirim" />
+        </p>
+        </fieldset>
+    </form>
+</p>
+</body>
+<html>
