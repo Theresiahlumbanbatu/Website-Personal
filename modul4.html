@@ -276,9 +276,58 @@
         </div>
     </div>
 </nav>
-<main class="container mt-4">
-    
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+ <div class="container">
+        <!-- Kolom 1 -->
+        <div class="column">
+            <h2>Selamat Datang</h2>
+            <p>Selamat Datang di Website Perpustakaan SUKA BACA</p>
+        </div>
+
+        <!-- Kolom 2 -->
+        <div class="column">
+            <h2>Daftar Buku</h2>
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Judul Buku</th>
+                        <th>Pengarang</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Belajar HTML</td>
+                        <td>John Doe</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Dasar CSS</td>
+                        <td>Jane Smith</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Kolom 3 -->
+        <div class="column">
+            <h2>Form Peminjaman</h2>
+            <form>
+                <div class="form-group">
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                </div>
+                <div class="form-group">
+                    <label for="buku">Judul Buku:</label>
+                    <input type="text" id="buku" name="buku" required>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Pinjam</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    
 </body>
 </html>
